@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TempMail</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="//cdn.repl.email/styles/water.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+  <link rel="manifest" href="image/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <h1>Temp Mail Service</h1>
+  </header>
+
+  <div class="email-wrapper">
+    <div class="top-email-section">
+      <div class="left-section">
+        <input class="mail-box" type="text" placeholder="Enter mail prefix.." id="addr" />
+        <select id="suffix" class="select-box">
+          <option value="">Choose...</option>
+          <option value="@dpptd.com">dpptd.com</option>
+          <option value="@rteet.com">rteet.com</option>
+        </select>
+        <button id="setBtn">Set</button>
+      </div>
+      <div class="right-section">
+        <div class="text-box">
+          <input class="random-mail-box" id="addr" placeholder="email address" />
+        </div>
+        <div class="button-wrapper">
+          <button id="randomBtn">Random</button>
+          <button id="refreshBtn">Refresh</button>
+          <button id="copyBtn">Copy</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p class="refresh-text">Mail will auto refresh every 10 seconds</p>
+    </div>
+    <div class="email-section">
+      <div class="bottom-section-left">
+        <span class="email-section-title">Inbox Message</span>
+        <div id="emailIds"></div>
+      </div>
+      <div class="bottom-section-right">
+        <span class="email-section-title">Email Content</span>
+        <div id="emailContent"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-heart">
+        Made with <g-emoji class="g-emoji" alias="heart"
+          fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+          <img class="emoji" alt="heart" height="20" width="20"
+            src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by <a href="">Karan
+          Kumar</a>
+      </p>
+    </footer>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
